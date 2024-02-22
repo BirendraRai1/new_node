@@ -34,7 +34,7 @@ const corsConfig = {
   credentials: true,
 };
 
-const path = require("path")
+const path = require("path");
 app.use(express.static(path.join(__dirname, "../horeca_node")));
 
 app.use(limiter);
@@ -65,7 +65,7 @@ app.get("/list", (req, res) => {
   res.send([
     {
       id: 1,
-      title: "Namaste Frontend System Design",
+      title: "Hello World",
     },
   ]);
 });
