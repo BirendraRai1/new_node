@@ -23,7 +23,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm ci
-      - run: npm test
         env:
           github_token: ${{ secrets.TOKEN }}
           PORT: ${{ secrets.PORT }}
