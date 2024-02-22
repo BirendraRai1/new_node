@@ -25,4 +25,12 @@ jobs:
       - run: npm ci
       - run: npm test
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+          github_token: ${{ secrets.TOKEN }}
+          PORT: ${{ secrets.PORT }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER : ${{secrets.DB_USER}}
+          DB_NAME : ${{secrets.DB_NAME}}
+          SECRET_KEY : ${{secrets.SECRET_KEY}}
+          EMAIL_USER: ${{secrets.EMAIL_USER}}
+          EMAIL_PASS: ${{secrets.EMAIL_PASS}}
+          PROJECT_LINK: ${{secrets.PROJECT_LINK}}
