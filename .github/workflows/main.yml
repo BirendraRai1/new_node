@@ -33,3 +33,4 @@ jobs:
           EMAIL_USER: ${{secrets.EMAIL_USER}}
           EMAIL_PASS: ${{secrets.EMAIL_PASS}}
           PROJECT_LINK: ${{secrets.PROJECT_LINK}}
+      - run: pm2 restart server.js
