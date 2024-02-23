@@ -61,7 +61,7 @@ app.use("/api/inventory", InventoryRelated);
 app.use("/api/brand", Brand);
 app.use("/api/description", DescriptionType);
 
-app.get("/list", (req, res) => {
+app.get("/", (req, res) => {
   res.send([
     {
       id: 1,
